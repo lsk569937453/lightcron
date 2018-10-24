@@ -1,8 +1,22 @@
 import dva from 'dva';
 import './index.css';
 
+
+
 // 1. Initialize
-const app = dva();
+const app = dva({
+    initialState: { 
+    footModel:{ footSeconds: {
+        index:0,value:'st'
+
+    }}
+ 
+  }
+}
+  
+);
+
+app.model(require("./models/footModel").default);
 
 // 2. Plugins
 // app.use({});

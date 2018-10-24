@@ -1,3 +1,11 @@
 
 .normal {
 }
+.tabPane{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.inputNumber{
+    margin-left: 2px;
+    margin-right: 2px;
+}
