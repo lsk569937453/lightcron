@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './FooterComponent.css';
+import * as Utils from '../utils/ConcactUtils'
 
 import { Layout, List } from 'antd';
 import { connect } from 'dva';
@@ -44,7 +45,7 @@ class FooterComponent extends React.Component {
         </Row>
         <Row>
           <Col span={3}><p className={styles.pText}>表达式字段：</p></Col>
-          <Col span={3}><Input size="small"   value={this.props.footSeconds.value} onChange={this.onchange}/>{}</Col>
+          <Col span={3}><Input size="small"   value={Utils.getSeconds(this.props.footSeconds)} onChange={this.onchange}/></Col>
           <Col span={3}><Input size="small" defaultValue={this.props.footSeconds.value}/></Col>
           <Col span={3}><Input size="small" defaultValue={this.props.footSeconds.value}/></Col>
           <Col span={3}><Input size="small" defaultValue={this.props.footSeconds.value}/></Col>

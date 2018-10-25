@@ -4,15 +4,7 @@ import './index.css';
 
 
 // 1. Initialize
-const app = dva({
-    initialState: { 
-    footModel:{ footSeconds: {
-        index:0,value:'st'
-
-    }}
- 
-  }
-}
+const app = dva(
   
 );
 
